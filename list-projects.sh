@@ -15,7 +15,7 @@ gcloud projects list > /tmp/project-list.txt
 echo "BILLING ACCOUNT ID   PROJECT ID                                 PROJECT NAME                    PROJECT #      MASTER ID"
 
 #      get billing account list user can see | kill hdr line | cut everything but billing IDs
-gcloud alpha billing accounts list --format="value(name,masterBillingAccount)" | while read billid mastid
+gcloud alpha billing accounts list --format="value(name,masterBillingAccount)" --sort-by masterBillingAccount | while read billid mastid
 do 
    projlist=`gcloud alpha billing projects list --billing-account=$billid --format="value(projectId)"`
 
