@@ -1,6 +1,6 @@
 # Google Cloud Platform Partner Scripts
 
-The purpose of this collection of scripts is to give a platform to release scripts that will be useful to help Partners easily collect information they may require to run their business.
+The purpose of this collection of scripts is to give our Partners a central repository where we can release scripts that will be useful to them.
 
 # list-projects
 
